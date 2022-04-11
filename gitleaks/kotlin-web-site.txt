@@ -1,0 +1,20 @@
+[
+ {
+  "Description": "Generic API Key",
+  "StartLine": 7,
+  "EndLine": 7,
+  "StartColumn": 4,
+  "EndColumn": 49,
+  "Match": "key: 'AIzaSyAMF-gJllft62W5l9xfgE6DBhaa6YmIJs0'",
+  "Secret": "AIzaSyAMF-gJllft62W5l9xfgE6DBhaa6YmIJs0",
+  "File": "static/js/ktl-component/teach/components/teach-map/teach-map.jsx",
+  "Commit": "e8d4af20b9066b837fd3b4ecab348ba437933091",
+  "Entropy": 4.6632314,
+  "Author": "nikpachoo",
+  "Email": "nikpachoo@gmail.com",
+  "Date": "2021-11-02T08:24:41Z",
+  "Message": "ktl-513 feat: universities map",
+  "Tags": [],
+  "RuleID": "generic-api-key"
+ }
+]
