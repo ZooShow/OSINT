@@ -69,6 +69,7 @@
 ![zoomeye15](https://github.com/ZooShow/OSINT/blob/main/zoomeye/zoomeye15.jpeg)
 ![zoomeye16](https://github.com/ZooShow/OSINT/blob/main/zoomeye/zoomeye16.jpeg)
 ## 7. raidforums.com
+![raidforums1](https://github.com/ZooShow/OSINT/blob/main/raidforums/raidforums.png)
 ## 8. grep.app
 ![grep1](https://github.com/ZooShow/OSINT/blob/main/grep/grep1.jpeg)
 ![grep2](https://github.com/ZooShow/OSINT/blob/main/grep/grep2.jpeg)
@@ -119,6 +120,8 @@
 ![gitleaks5](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks5.jpeg)
 [kotlin.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/kotlin.txt)
 ## 14. github.com/twintproject/twint
+![twint1](https://github.com/ZooShow/OSINT/blob/main/twint/twint1.png)
+![twint2](https://github.com/ZooShow/OSINT/blob/main/twint/twint2.png)
 ## 15. github.com/sherlock-project/sherlock
 ![andrey%20twitter](https://github.com/ZooShow/OSINT/blob/main/sherlock/andrey%20twitter.png)
 ![sherlock%20jetbrains](https://github.com/ZooShow/OSINT/blob/main/sherlock/sherlock%20jetbrains.png)
@@ -151,3 +154,5 @@
 ![sudomy4](https://github.com/ZooShow/OSINT/blob/main/sudomy/sudomy4.png)
 [jetbrains.org](https://github.com/ZooShow/OSINT/tree/main/sudomy/jetbrains.org)
 ## 19. Maltego
+![maltego](https://github.com/ZooShow/OSINT/blob/main/Maltego/Maltego%20CaseFile%204.3.0%2015.04.2022%201_55_23%20(2).png)
+[graph](https://github.com/ZooShow/OSINT/blob/main/Maltego/OsintGraph.mtgl)
