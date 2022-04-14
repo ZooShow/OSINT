@@ -23,12 +23,12 @@
 ![censys3](https://github.com/ZooShow/OSINT/blob/main/censys/censys3.jpeg)
 ![censys4](https://github.com/ZooShow/OSINT/blob/main/censys/censys4.jpeg)
 ## 5. shodan.io
-[MaryRybalka:]
+[MaryRybalka:](#)
 ![shodanM1](https://github.com/ZooShow/OSINT/blob/main/shodan/Krasnova/8882577B-800A-411D-AEAA-8D268DF96AC3.jpeg)
 ![shodanM2](https://github.com/ZooShow/OSINT/blob/main/shodan/Krasnova/921DAC74-A86F-4C6F-9CA9-29E8F11649C4.jpeg)
 ![shodanM3](https://github.com/ZooShow/OSINT/blob/main/shodan/Krasnova/D6C4923C-A2F0-4F41-B051-B5BFB0D1A067.jpeg)
 
-[ZooShow:]
+[ZooShow:](#)
 ![shodanZ1](https://github.com/ZooShow/OSINT/blob/main/shodan/shodan1.png)
 ![shodanZ2](https://github.com/ZooShow/OSINT/blob/main/shodan/shodan2.jpeg)
 ![shodanZ3](https://github.com/ZooShow/OSINT/blob/main/shodan/shodan3.png)
