@@ -1,0 +1,117 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis.css" type="text/css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.16.1/vis-network.min.js"> </script>
+<center>
+<h1><script>document.getElementsByTagName("center")[0].remove()</script></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+
+<style type="text/css">
+
+        #mynetwork {
+            width: 100%;
+            height: 100%;
+            background-color: #2d2e2e;
+            border: 1px solid lightgray;
+            position: relative;
+            float: left;
+        }
+
+        
+
+        
+
+        
+</style>
+
+</head>
+
+<body>
+<div id = "mynetwork"></div>
+
+
+<script type="text/javascript">
+
+    // initialize global variables.
+    var edges;
+    var nodes;
+    var network; 
+    var container;
+    var options, data;
+
+    
+    // This method is responsible for drawing the graph, returns the drawn network
+    function drawGraph() {
+        var container = document.getElementById('mynetwork');
+        
+        
+
+        // parsing and collecting nodes and edges from the python
+        nodes = new vis.DataSet([{"color": "#162347", "font": {"color": "white"}, "group": "jetbrains.org", "id": "jetbrains.org", "label": "jetbrains.org", "labelHighlightBold": true, "shape": "dot"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "52.212.1.36", "id": "52.212.1.36", "label": "52.212.1.36", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "pa.research.jetbrains.org", "id": "pa.research.jetbrains.org", "label": "pa.research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "pa.research.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "13.33.243.31", "id": "13.33.243.31", "label": "13.33.243.31", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "www.jetbrains.org", "id": "www.jetbrains.org", "label": "www.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "www.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "185.215.4.14", "id": "185.215.4.14", "label": "185.215.4.14", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "ml2022.research.jetbrains.org", "id": "ml2022.research.jetbrains.org", "label": "ml2022.research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "ml2022.research.jetbrains.org"}, {"color": "#828282", "font": {"color": "white"}, "group": "www.ml2022.research.jetbrains.org", "id": "www.ml2022.research.jetbrains.org", "label": "www.ml2022.research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "www.ml2022.research.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "52.85.47.32", "id": "52.85.47.32", "label": "52.85.47.32", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "46.137.189.41", "id": "46.137.189.41", "label": "46.137.189.41", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "git.jetbrains.org", "id": "git.jetbrains.org", "label": "git.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "git.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "35.244.184.246", "id": "35.244.184.246", "label": "35.244.184.246", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "research.jetbrains.org", "id": "research.jetbrains.org", "label": "research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "research.jetbrains.org"}, {"color": "#828282", "font": {"color": "white"}, "group": "www.research.jetbrains.org", "id": "www.research.jetbrains.org", "label": "www.research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "www.research.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "34.250.172.79", "id": "34.250.172.79", "label": "34.250.172.79", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "hg.jetbrains.org", "id": "hg.jetbrains.org", "label": "hg.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "hg.jetbrains.org"}, {"color": "#828282", "font": {"color": "white"}, "group": "svn.jetbrains.org", "id": "svn.jetbrains.org", "label": "svn.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "svn.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "13.33.243.127", "id": "13.33.243.127", "label": "13.33.243.127", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "data-sharing.pa.research.jetbrains.org", "id": "data-sharing.pa.research.jetbrains.org", "label": "data-sharing.pa.research.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "data-sharing.pa.research.jetbrains.org"}, {"color": "#bf281d", "font": {"color": "white"}, "group": "35.228.34.253", "id": "35.228.34.253", "label": "35.228.34.253", "labelHighlightBold": true, "physics": true, "shape": "dot"}, {"color": "#828282", "font": {"color": "white"}, "group": "kotlin-web-site.jetbrains.org", "id": "kotlin-web-site.jetbrains.org", "label": "kotlin-web-site.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "kotlin-web-site.jetbrains.org"}, {"color": "#828282", "font": {"color": "white"}, "group": "kotlin.jetbrains.org", "id": "kotlin.jetbrains.org", "label": "kotlin.jetbrains.org", "labelHighlightBold": true, "physics": true, "shape": "dot", "title": "kotlin.jetbrains.org"}]);
+        edges = new vis.DataSet([{"arrowStrikethrough": true, "from": "52.212.1.36", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "pa.research.jetbrains.org", "title": "52.212.1.36", "to": "52.212.1.36"}, {"arrowStrikethrough": true, "from": "13.33.243.31", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "www.jetbrains.org", "title": "13.33.243.31", "to": "13.33.243.31"}, {"arrowStrikethrough": true, "from": "185.215.4.14", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "ml2022.research.jetbrains.org", "title": "185.215.4.14", "to": "185.215.4.14"}, {"from": "www.ml2022.research.jetbrains.org", "title": "185.215.4.14", "to": "185.215.4.14"}, {"arrowStrikethrough": true, "from": "52.85.47.32", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"arrowStrikethrough": true, "from": "46.137.189.41", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "git.jetbrains.org", "title": "46.137.189.41", "to": "46.137.189.41"}, {"arrowStrikethrough": true, "from": "35.244.184.246", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "research.jetbrains.org", "title": "35.244.184.246", "to": "35.244.184.246"}, {"from": "www.research.jetbrains.org", "title": "35.244.184.246", "to": "35.244.184.246"}, {"arrowStrikethrough": true, "from": "34.250.172.79", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "hg.jetbrains.org", "title": "34.250.172.79", "to": "34.250.172.79"}, {"from": "svn.jetbrains.org", "title": "34.250.172.79", "to": "34.250.172.79"}, {"arrowStrikethrough": true, "from": "13.33.243.127", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "data-sharing.pa.research.jetbrains.org", "title": "13.33.243.127", "to": "13.33.243.127"}, {"arrowStrikethrough": true, "from": "35.228.34.253", "title": "jetbrains.org", "to": "jetbrains.org", "width": 3}, {"from": "kotlin-web-site.jetbrains.org", "title": "35.228.34.253", "to": "35.228.34.253"}, {"from": "kotlin.jetbrains.org", "title": "35.228.34.253", "to": "35.228.34.253"}]);
+
+        // adding nodes and edges to the graph
+        data = {nodes: nodes, edges: edges};
+
+        var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": false,
+            "type": "continuous"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "enabled": true,
+        "forceAtlas2Based": {
+            "avoidOverlap": 5.0,
+            "centralGravity": 0.01,
+            "damping": 2.0,
+            "gravitationalConstant": -500,
+            "springConstant": 0.08,
+            "springLength": 100
+        },
+        "solver": "forceAtlas2Based",
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+        
+        
+
+        
+
+        network = new vis.Network(container, data, options);
+	 
+        
+
+
+        
+
+        return network;
+
+    }
+
+    drawGraph();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+data-sharing.pa.research.jetbrains.org   13.33.243.127
+git.jetbrains.org                        46.137.189.41
+hg.jetbrains.org                         34.250.172.79
+jetbrains.org                            52.85.47.32
+kotlin-web-site.jetbrains.org            35.228.34.253
+kotlin.jetbrains.org                     35.228.34.253
+ml2022.research.jetbrains.org            185.215.4.14
+pa.research.jetbrains.org                52.212.1.36
+research.jetbrains.org                   35.244.184.246
+svn.jetbrains.org                        34.250.172.79
+www.jetbrains.org                        13.33.243.31
+www.ml2022.research.jetbrains.org        185.215.4.14
+www.research.jetbrains.org               35.244.184.246
