@@ -19,6 +19,7 @@
 ![foca6](https://github.com/ZooShow/OSINT/blob/main/foca/foca6.png)
 ![foca7](https://github.com/ZooShow/OSINT/blob/main/foca/foca7.png)
 ![foca8](https://github.com/ZooShow/OSINT/blob/main/foca/foca8.png)
+
 [user.txt](https://github.com/ZooShow/OSINT/blob/main/foca/users.txt)
 ## 3. osintframework.com
 ### hunter(ZooShow)
@@ -27,6 +28,7 @@
 ![hunterM1](https://github.com/ZooShow/OSINT/blob/main/osintframework/hunter/1.png)
 ![hunterM1](https://github.com/ZooShow/OSINT/blob/main/osintframework/hunter/2.png)
 ![hunterM1](https://github.com/ZooShow/OSINT/blob/main/osintframework/hunter/3.png)
+
 [emails.txt](https://github.com/ZooShow/OSINT/blob/main/osintframework/hunter/emails.txt)
 ### thatstem
 ![thatsthem1](https://raw.githubusercontent.com/ZooShow/OSINT/main/osintframework/thatsthem2.jpeg)
@@ -75,11 +77,13 @@
 ![grep2](https://github.com/ZooShow/OSINT/blob/main/grep/grep2.jpeg)
 ## 9. github.com/yogeshojha/rengin
 ![data](https://github.com/ZooShow/OSINT/blob/main/rengine/data.png)
+
 [endpoints-all.txt](https://github.com/ZooShow/OSINT/blob/main/rengine/endpoints-all.txt)
 [endpoints-params.txt](https://github.com/ZooShow/OSINT/blob/main/rengine/endpoints-params.txt)
 [endpoints-sqli.txt](https://github.com/ZooShow/OSINT/blob/main/rengine/endpoints-sqli.txt)
 ![osint](https://github.com/ZooShow/OSINT/blob/main/rengine/osint.png)
 ![scan](https://github.com/ZooShow/OSINT/blob/main/rengine/scan1.png)
+
 [subdomains-jetbrains.com.txt](https://github.com/ZooShow/OSINT/blob/main/rengine/subdomains-jetbrains.com.txt)
 ## 10. github.com/qeeqbox/social-analyzer
 ![elena1](https://github.com/ZooShow/OSINT/blob/main/social-analyzer/elena1.png)
@@ -95,6 +99,7 @@
 ![open_tcp_port](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/open%20tcp%20port.png)
 ![public_code_rep](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/public%20code%20rep.png)
 ![vulnerability](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/vulnerability.png)
+
 [phonenumber.txt](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/phonenumber.txt)
 [physical adress.txt](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/physical%20address.txt)
 [physical location.txt](https://github.com/ZooShow/OSINT/blob/main/spiderfoot/physical%20location.txt)
@@ -105,19 +110,23 @@
 ![harvester3](https://github.com/ZooShow/OSINT/blob/main/harvester/Screenshot_2022-04-13_08_59_21.png)
 ## 13. github.com/zricethezav/gitleaks
 ![gitleaks1](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks1.jpeg)
+
 [jsign.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/jsign.txt)
 
 ![gitleaks2](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks2.jpeg)
-[kotlin-web-site.txt
-](https://github.com/ZooShow/OSINT/blob/main/gitleaks/kotlin-web-site.txt)
+
+[kotlin-web-site.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/kotlin-web-site.txt)
 
 ![gitleaks3](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks%D0%97.jpeg)
+
 [intellij-plugin-verifier.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/intellij-plugin-verifier.txt)
 
 ![gitleaks4](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks4.jpeg)
+
 [intellij-community.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/intellij-community.txt)
 
 ![gitleaks5](https://github.com/ZooShow/OSINT/blob/main/gitleaks/gitleaks5.jpeg)
+
 [kotlin.txt](https://github.com/ZooShow/OSINT/blob/main/gitleaks/kotlin.txt)
 ## 14. github.com/twintproject/twint
 ![twint1](https://github.com/ZooShow/OSINT/blob/main/twint/twint1.png)
@@ -137,6 +146,7 @@
 [zweizwei.txt](https://github.com/ZooShow/OSINT/blob/main/sherlock/zweizwei.txt)
 ## 16. github.com/s0md3v/Photon
 ![photon.png](https://github.com/ZooShow/OSINT/blob/main/photon/photon.png)
+
 [internal.txt](https://github.com/ZooShow/OSINT/blob/main/photon/internal.txt)
 ## 17. ahmia.fi
 ![ahmia1](https://github.com/ZooShow/OSINT/blob/main/Ahmia/Krasnova/28681D28-6630-4C1B-800E-9857522E09D9.png)
@@ -150,9 +160,13 @@
 ![sudomy1](https://github.com/ZooShow/OSINT/blob/main/sudomy/sudomy1.png)
 ![sudomy2](https://github.com/ZooShow/OSINT/blob/main/sudomy/sudomy2.png)
 ![sudomy3](https://github.com/ZooShow/OSINT/blob/main/sudomy/sudomy3.png)
+
 [jetbrains.com](https://github.com/ZooShow/OSINT/tree/main/sudomy/jetbrains.com)
+
 ![sudomy4](https://github.com/ZooShow/OSINT/blob/main/sudomy/sudomy4.png)
+
 [jetbrains.org](https://github.com/ZooShow/OSINT/tree/main/sudomy/jetbrains.org)
 ## 19. Maltego
 ![maltego](https://github.com/ZooShow/OSINT/blob/main/Maltego/Maltego%20CaseFile%204.3.0%2015.04.2022%201_55_23%20(2).png)
+
 [graph](https://github.com/ZooShow/OSINT/blob/main/Maltego/OsintGraph.mtgl)
